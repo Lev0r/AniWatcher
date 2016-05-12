@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AniWatcher.cs" />
+    <Compile Include="Helpers\PropertyHelper.cs" />
     <Compile Include="MvvmIntegration\AutofacBootstrapper.cs" />
     <Compile Include="MvvmIntegration\AutofacModule.cs" />
     <Compile Include="MvvmIntegration\Bootstrapper.cs" />
