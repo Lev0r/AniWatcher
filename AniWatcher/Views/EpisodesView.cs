@@ -2,7 +2,7 @@
 
 namespace AniWatcher.Views
 {
-    class EpisodesView: ContentPage
+    public class EpisodesView: ContentPage
     {
         public EpisodesView()
         {

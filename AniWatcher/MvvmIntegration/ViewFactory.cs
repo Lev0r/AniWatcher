@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace AniWatcher.MvvmIntegration
 {
-    public class ViewFactory
+    public class ViewFactory: IViewFactory
     {
         private readonly IDictionary<Type, Type> _map = new Dictionary<Type, Type>();
         private readonly IComponentContext _componentContext;

@@ -16,6 +16,7 @@ namespace AniWatcher.MvvmIntegration
             RegisterViews(viewFactory);
 
             ConfigureApplication(container);
+            
         }
 
         protected virtual void ConfigureContainer(ContainerBuilder builder)

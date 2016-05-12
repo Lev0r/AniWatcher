@@ -1,4 +1,6 @@
-﻿using Autofac;
+﻿using AniWatcher.ViewModels;
+using AniWatcher.Views;
+using Autofac;
 using Xamarin.Forms;
 
 namespace AniWatcher.MvvmIntegration
@@ -20,6 +22,17 @@ namespace AniWatcher.MvvmIntegration
             builder.Register<INavigation>(context =>
                 Application.Current.MainPage.Navigation
             ).SingleInstance();
+
+            RegisterViewModels(builder);
+        }
+
+        private void RegisterViewModels(ContainerBuilder builder)
+        {
+            builder.RegisterType<EpisodesViewModel>()
+                .SingleInstance();
+
+            builder.RegisterType<EpisodesView>()
+                .SingleInstance();
         }
     }
 }
